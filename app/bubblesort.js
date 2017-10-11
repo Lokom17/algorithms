@@ -1,4 +1,4 @@
-var mas = [3,2,1,3];
+var mas = [3,2,1,4];
 
 function bubbleSort(mas) {
     for (var i=1; i<mas.length; i++){

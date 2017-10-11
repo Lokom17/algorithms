@@ -1,24 +1,18 @@
 'use strict';
 
-const algolib = require('../index.js');
+const algo = require('../index.js');
 
-describe('bubble-sort', function() {
+describe('bubbleSort', function() {
     it('should return empty array when empty array was passed', function() {
-        let sortedArr = algolib.bubbleSort([]);
-
-        sortedArr.should.be.eql([]);
+        algo.bubbleSort([]).should.be.eql([]);
     });
 
     it('should return sorted array if sorted array was passed', function() {
-        let sortedArr = algolib.bubbleSort([1,2,3,4]);
-
-        sortedArr.should.be.eql([1,2,3,4]);
+        algo.bubbleSort([2,3,1,4]).should.be.eql([1,2,3,4]);
     });
 
     it('should sort array', function() {
-        let sortedArr = algolib.bubbleSort([2, 3, 6, 1, 3, 4, 7, 5]);
-
-        sortedArr.should.be.eql([1, 2, 3, 3, 4, 5, 6, 7]);
+        algo.bubbleSort([11, 55, 66, 22, 33, 44]).should.be.eql([11, 22, 33, 44, 55, 66]);
     })
 
 })
